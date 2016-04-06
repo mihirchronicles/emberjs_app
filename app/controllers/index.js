@@ -19,11 +19,11 @@ export default Ember.Controller.extend({
       });
 
       newInvitation.save().then((response) => {
-        // alert(`Saving of the following email address is in progress: ${this.get('emailAddress')}`);
-        this.set('responseMessage', `Thank you! We saved your email address with the following id: ${response.get('id')}`);   
+        this.set('responseMessage', `Thank you! We saved your email address with the following id: ${response.get('id')}`);
         this.set('emailAddress', '');
       });
+
     }
   }
 
-}); 
+});
